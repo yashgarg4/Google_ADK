@@ -28,9 +28,9 @@ def count_characters(text: str, tool_context: ToolContext) -> Dict[str, Any]:
     MIN_LENGTH = 1000
     MAX_LENGTH = 1500
 
-    print("\n----------- TOOL DEBUG -----------")
+    print("\n---- TOOL DEBUG ----")
     print(f"Checking text length: {char_count} characters")
-    print("----------------------------------\n")
+    print("----\n")
 
     if char_count < MIN_LENGTH:
         chars_needed = MIN_LENGTH - char_count
@@ -70,10 +70,10 @@ def exit_loop(tool_context: ToolContext) -> Dict[str, Any]:
     Returns:
         Empty dictionary
     """
-    print("\n----------- EXIT LOOP TRIGGERED -----------")
+    print("\n---- EXIT LOOP TRIGGERED ----")
     print("Post review completed successfully")
     print("Loop will exit now")
-    print("------------------------------------------\n")
+    print("----\n")
 
     tool_context.actions.escalate = True
     return {}
