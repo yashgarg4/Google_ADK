@@ -27,7 +27,7 @@ root_agent = SequentialAgent(
     name="LinkedInPostGenerationPipeline",
     sub_agents=[
         initial_post_generator,  
-        refinement_loop,  # Step 2: Review and refine in a loop
+        refinement_loop, 
     ],
     description="Generates and refines a LinkedIn post through an iterative review process",
 )
