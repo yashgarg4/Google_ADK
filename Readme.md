@@ -60,4 +60,4 @@ basic_agent/
 
 ## Customization
 
-- Modify agent instructions or tools in the `subagents/` directory to adjust review criteria or style requirements.
+- Modify agent instructions or tools in the `subagents/` directory to adjust review criteria or can style requirements.
